@@ -2,13 +2,10 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-#@app.get("/status")
-#def get_status():
-#    return {"Hello World!"}
-
-@app.get("/dima")
+@app.get("/status")
 def get_status():
-    return {"dimalox"}
+    return {"Hello World!"}
+
 
 if __name__ == "__main__":
     import uvicorn
